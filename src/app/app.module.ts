@@ -3,16 +3,25 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { TodoComponent } from './todo/todo.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { RegisterFinalComponent } from './register-final/register-final.component';
+import { TemplateDrivenFormComponent } from './template-driven-form/template-driven-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoComponent
+    TodoComponent,
+    LoginComponent,
+    RegisterComponent,
+    RegisterFinalComponent,
+    TemplateDrivenFormComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

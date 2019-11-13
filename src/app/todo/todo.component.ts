@@ -6,6 +6,7 @@ interface ITodo {
   content: string;
   complete: boolean;
 }
+// tslint:disable-next-line:variable-name
 let _id = 1;
 @Component({
   selector: 'app-todo',
